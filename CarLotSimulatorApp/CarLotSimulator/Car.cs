@@ -8,11 +8,12 @@ namespace CarLotSimulator
     {
         public Car()
         {
-
+            CarLot.numberOfCars++;
+            //ClassName.StaticMember to access static variables. 
         }
 
 
-        public Car(int year,string make,string model,string engineNoise, string honkNoise, bool isDrivealbe)
+        public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDrivealbe)
         {
             Year = year;
             Make = make;
@@ -20,7 +21,6 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDrivealbe;
-
         }
         
        
